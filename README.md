@@ -226,3 +226,19 @@ Claude was the primary development accelerator across every layer of the platfor
 ---
 
 *Data generated synthetically for demonstration purposes.*
+
+
+LLM Usage Log
+Tools used: Claude, ChatGPT
+How LLMs were used:
+LLMs were used to generate initial versions of the ingestion pipeline, analytics queries, and dashboard structure. The development process was done step-by-step (schema → ingestion → analytics → visualization) to maintain control over correctness.
+Example prompts:
+“Design a relational schema for telemetry JSON logs with different event types.”
+“Write a Python script to parse JSONL logs and load them into SQLite.”
+“Generate queries to compute cost trends, tool usage, and error rates.”
+Validation:
+Manually checked raw data against database tables to ensure correct parsing
+Verified row counts and ensured no duplicate records
+Cross-checked metrics (e.g., total cost across different queries)
+Tested edge cases (malformed records, missing data)
+Ensured dashboard values match analytics outputs
